@@ -1,0 +1,1 @@
+My generic config for agent coding.
