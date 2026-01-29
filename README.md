@@ -6,12 +6,14 @@ A centralized configuration repository for the Antigravity agent. This project d
 
 ### 🧠 Skills
 Specialized capabilities that extend the agent's toolkit:
-- **Creating Skills** (`skills/creating-skills`): Standards and templates for generating new agent skills, ensuring they follow the "Antigravity" structural requirements.
-- **Creating Workflows** (`skills/creating-workflows`): Guidelines for defining robust, step-by-step automation workflows (turbo mode, step validation).
+- **Creating Skills** (`skills/create-skills`): Standards and templates for generating new agent skills, ensuring they follow the "Antigravity" structural requirements.
+- **Creating Workflows** (`skills/create-workflows`): Guidelines for defining robust, step-by-step automation workflows.
+- **Design Web UI** (`skills/design-webui`): Provides the single source of truth for design guidelines, design tokens, and technology choices.
 
 ### ⚡ Workflows
 Automated sequences of tasks to speed up development:
-- **Generate README** (`/generate-readme`): Automatically analyzes a codebase and generates a comprehensive `README.md` file (like this one!).
+- **Generate README** (`workflows/generate-readme.md`): Automatically analyzes a codebase and generates a comprehensive `README.md` file (like this one!).
+- **Optimize Code** (`workflows/optimize-code.md`): Review and optimize the open file by analyzing time complexity and identifying redundant logic.
 
 ### 📏 Global Rules
 - **Code Style**: Enforces naming conventions (PascalCase for classes, camelCase for local vars) and formatting (Allman braces).
@@ -21,10 +23,9 @@ Automated sequences of tasks to speed up development:
 ## Project Structure
 
 ```
-├── .agent/
-│   └── workflows/       # Workflow definitions (.md)
 ├── rules/               # Global rule definitions
 ├── skills/              # Skill definitions and resources
+├── workflows/           # Workflow definitions (.md)
 └── README.md            # Project documentation
 ```
 
@@ -37,4 +38,4 @@ This repository is intended to be loaded by the Antigravity agent as a configura
 ## Contributing
 
 - **New Skills**: Create a new folder in `skills/` defined by `SKILL.md`.
-- **New Workflows**: Add `.md` files to `.agent/workflows/` with valid YAML frontmatter.
+- **New Workflows**: Add `.md` files to `workflows/` with valid YAML frontmatter.
