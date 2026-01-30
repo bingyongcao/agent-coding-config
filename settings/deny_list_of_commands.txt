@@ -2,7 +2,7 @@ rm
 del
 Remove-Item
 rmdir
-RimRaf
+sudo
 mv
 move
 chmod

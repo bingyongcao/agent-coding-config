@@ -6,6 +6,7 @@ A centralized configuration repository for the Antigravity agent. This project d
 
 ### 🧠 Skills
 Specialized capabilities that extend the agent's toolkit:
+- **ASCII Designer** (`skills/ascii-designer`): Creates professional ASCII UI wireframes, mockups, and prototypes for software, web, and mobile interfaces.
 - **Creating Skills** (`skills/create-skills`): Standards and templates for generating new agent skills, ensuring they follow the "Antigravity" structural requirements.
 - **Creating Workflows** (`skills/create-workflows`): Guidelines for defining robust, step-by-step automation workflows.
 - **Design Web UI** (`skills/design-webui`): Provides the single source of truth for design guidelines, design tokens, and technology choices.
@@ -20,12 +21,24 @@ Automated sequences of tasks to speed up development:
 - **Architecture**: Promotes patterns like Repository, Dependency Injection, and Single Responsibility.
 - **Performance & Quality**: Guidelines for optimization and robust error handling.
 
+### ⚙️ Settings
+- **Deny List** (`settings/deny_list_of_commands.txt`): A list of commands that the agent is prohibited from executing.
+
 ## Project Structure
 
 ```
 ├── rules/               # Global rule definitions
+│   └── global-rules.md
+├── settings/            # Agent configuration settings
+│   └── deny_list_of_commands.txt
 ├── skills/              # Skill definitions and resources
+│   ├── ascii-designer/
+│   ├── create-skills/
+│   ├── create-workflows/
+│   └── design-webui/
 ├── workflows/           # Workflow definitions (.md)
+│   ├── generate-readme.md
+│   └── optimize-code.md
 └── README.md            # Project documentation
 ```
 
